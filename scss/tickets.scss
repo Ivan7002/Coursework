@@ -1,0 +1,84 @@
+@import "basicUI";
+
+main {
+    h2 {
+        text-align: center;
+        font-size: 40px;
+        font-weight: normal;
+        width: 100%;
+        margin-bottom: 30px;
+        color: #f5f5f5;
+    }
+
+    #filter {
+        width: calc(100% - 40px);
+        max-width: 800px;
+        margin: 0 auto 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+        color:#FFFFFF;
+        
+        label {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        select {
+            width: 100%;
+            max-width: 300px;
+            height: 45px;
+            border: 2px solid #ff0033;
+            border-radius: 35px;
+            text-align: center;
+            font-size: 20px;
+            padding: 0 15px;
+        }
+    }
+
+    #blox {
+        width: calc(100% - 40px);
+        margin: 0 auto;
+        padding: 20px;
+
+        .ticket {
+            width: 100%;
+            min-height: 300px;
+            background-color: #f5f5f5;
+            padding: 25px;
+            box-shadow: 5px 6px 20px rgba(0, 0, 0, 0.15);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border-radius: 15px;
+            
+            p {
+                font-size: 20px;
+                margin: 12px 0;
+                text-align: center;
+                width: 100%;
+                
+                &#price {
+                    color: #ff0033;
+                    font-weight: bold;
+                    font-size: 20px;
+                    margin-top: auto;
+                }
+            }
+
+            button {
+                width: 140px;
+                height: 29px;
+                background-color: #ff0033;
+                color: #FFFFFF;
+                border: none;
+                border-radius: 35px;
+                font-size: 16px;
+                margin-top: 15px;
+            }
+        }
+    }
+}

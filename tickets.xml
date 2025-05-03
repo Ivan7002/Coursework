@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tickets>
+    <ticket id="1" route="Добруш-Минск" departure="15:03" arrival="18:03" days="пн,вт,ср,чт,пт" price="23.16 BYN"/>
+    <ticket id="2" route="Минск-Добруш" departure="12:03" arrival="17:03" days="пн,вт,ср,чт,пт" price="23.16 BYN"/>
+    <ticket id="3" route="Минск-Полоцк" departure="15:03" arrival="18:03" days="пн,вт,ср,чт,пт" price="23.16 BYN"/>
+    <ticket id="4" route="Полоцк-Минск" departure="15:03" arrival="18:03" days="пн,вт,ср,чт,пт" price="21.16 BYN"/>
+    <ticket id="5" route="Витебск-Минск" departure="10:14" arrival="14:23" days="пн,чт,пт" price="32.47 BYN"/>
+    <ticket id="6" route="Минск-Витебск" departure="17:00" arrival="22:19" days="пн,чт,пт" price="32.12 BYN"/>
+    <ticket id="7" route="Минск-Могилёв" departure="08:00" arrival="12:00" days="пн,вт,ср,чт,пт" price="25.40 BYN"/>
+    <ticket id="8" route="Могилёв-Минск" departure="16:00" arrival="20:00" days="пн,вт,ср,чт,пт" price="24.90 BYN"/>
+    <ticket id="9" route="Минск-Гомель" departure="07:30" arrival="11:45" days="вт,ср,чт,пт" price="27.50 BYN"/>
+    <ticket id="10" route="Гомель-Минск" departure="15:15" arrival="19:30" days="вт,ср,чт,пт" price="26.80 BYN"/>
+    <ticket id="11" route="Минск-Пинск" departure="09:00" arrival="13:20" days="пн,ср,пт" price="24.90 BYN"/>
+    <ticket id="12" route="Пинск-Минск" departure="14:30" arrival="18:50" days="пн,ср,пт" price="24.30 BYN"/>
+    <ticket id="13" route="Минск-Барановичи" departure="10:00" arrival="12:30" days="пн-сб" price="18.75 BYN"/>
+    <ticket id="14" route="Барановичи-Минск" departure="13:00" arrival="15:30" days="пн-сб" price="18.75 BYN"/>
+    <ticket id="15" route="Минск-Брест" departure="06:00" arrival="10:15" days="пн-сб" price="29.45 BYN"/>
+    <ticket id="16" route="Брест-Минск" departure="17:00" arrival="21:15" days="пн-сб" price="28.90 BYN"/>
+    <ticket id="17" route="Минск-Гродно" departure="11:20" arrival="15:40" days="чт-сб" price="26.50 BYN"/>
+    <ticket id="18" route="Гродно-Минск" departure="16:10" arrival="20:30" days="чт-сб" price="25.75 BYN"/>
+</tickets>

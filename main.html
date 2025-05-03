@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turbo Transit</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+</head>
+<body>
+    <div id="preloader">
+        <svg width="100%" height="100%" viewBox="0 0 500 200" preserveAspectRatio="xMidYMid meet">
+      
+            <rect x="0" y="150" width="500" height="50" fill="none" stroke="white" stroke-width="2"/>
+            
+          
+            <line x1="0" y1="175" x2="500" y2="175" stroke="white" stroke-width="2" stroke-dasharray="20,10"/>
+            
+            
+            <g id="bus" transform="translate(-100, 100) scale(0.8)">
+                <path d="M24.5 76.0605C28.9183 76.0605 32.5 72.4788 32.5 68.0605C32.5 63.6423 28.9183 60.0605 24.5 60.0605C20.0817 60.0605 16.5 63.6423 16.5 68.0605C16.5 72.4788 20.0817 76.0605 24.5 76.0605Z" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M72.5 76.0605C76.9183 76.0605 80.5 72.4788 80.5 68.0605C80.5 63.6423 76.9183 60.0605 72.5 60.0605C68.0817 60.0605 64.5 63.6423 64.5 68.0605C64.5 72.4788 68.0817 76.0605 72.5 76.0605Z" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16.5 68.0605H8.5V24.0605C8.5 22.9997 8.92143 21.9823 9.67157 21.2321C10.4217 20.482 11.4391 20.0605 12.5 20.0605H68.5C73.8043 20.0605 78.8914 23.0105 82.6421 28.2616C86.3929 33.5126 88.5 40.6345 88.5 48.0605V68.0605H80.5M64.5 68.0605H32.5" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M64.5 20.0605L70.5 48.0605H88.5" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8.5 40.0605H68.5" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M28.5 20.0605V40.0605" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M48.5 20.0605V40.0605" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+        </svg>
+    </div>
+        <header>
+            <a href="main.html">
+                <svg width="97" height="97" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_49_1090)">
+                    <path d="M24.5 76.0605C28.9183 76.0605 32.5 72.4788 32.5 68.0605C32.5 63.6423 28.9183 60.0605 24.5 60.0605C20.0817 60.0605 16.5 63.6423 16.5 68.0605C16.5 72.4788 20.0817 76.0605 24.5 76.0605Z" stroke="#F3E7E7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M72.5 76.0605C76.9183 76.0605 80.5 72.4788 80.5 68.0605C80.5 63.6423 76.9183 60.0605 72.5 60.0605C68.0817 60.0605 64.5 63.6423 64.5 68.0605C64.5 72.4788 68.0817 76.0605 72.5 76.0605Z" stroke="#F3E7E7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16.5 68.0605H8.5V24.0605C8.5 22.9997 8.92143 21.9823 9.67157 21.2321C10.4217 20.482 11.4391 20.0605 12.5 20.0605H68.5C73.8043 20.0605 78.8914 23.0105 82.6421 28.2616C86.3929 33.5126 88.5 40.6345 88.5 48.0605V68.0605H80.5M64.5 68.0605H32.5" stroke="#F3E7E7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M64.5 20.0605L70.5 48.0605H88.5" stroke="#F3E7E7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.5 40.0605H68.5" stroke="#F3E7E7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M28.5 20.0605V40.0605" stroke="#F3E7E7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M48.5 20.0605V40.0605" stroke="#F3E7E7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_49_1090">
+                    <rect width="96" height="96" fill="white" transform="translate(0.5 0.0605469)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+            </a>
+
+            <svg
+                class="menu"
+                id="menu"
+                width="48"
+                height="49"
+                viewBox="0 0 48 49"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                >
+                <path
+                    d="M6 24.5H42M6 12.5H42M6 36.5H42"
+                    stroke="#F5F5F5"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </svg>
+
+            <nav id="headerMenu">
+                <ul>
+                    <a href="tickets.html"><li id="menuBttn1">Купить билеты</li></a>
+                    <a href="partners.html"><li id="menuBttn3">Наши партнеры</li></a>
+                    <a href="aboutus.html"><li id="menuBttn4">О нас</li></a>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <section id="main">
+            <div class="welcome-section">
+                <h1>Turbo Transit</h1>
+                <p class="welcome-text">Добро пожаловать в мир скоростных грузоперевозок. Мы гарантируем быструю и безопасную доставку ваших грузов. Наша команда профессионалов работает круглосуточно. Современный автопарк и отлаженные маршруты - наши преимущества. Доверьте свой груз лидеру отрасли!</p>
+            </div>
+            
+            <div class="image-row">
+                <img src="img/index/1.jpg" class="small-image">
+                <img src="img/index/2.jpg"  class="small-image">
+                <img src="img/index/3.jpg"  class="small-image">
+            </div>
+        </section>
+    <section id="advantages">
+        <h2>Почему выбирают нас</h2>
+        <div class="advantages-container">
+            
+            
+            <div class="advantage-card">
+                <div class="advantage-icon">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M40 0C17.9086 0 0 17.9086 0 40C0 62.0914 17.9086 80 40 80C62.0914 80 80 62.0914 80 40C80 17.9086 62.0914 0 40 0ZM40 15C46.9036 15 52.5 20.5964 52.5 27.5C52.5 34.4036 46.9036 40 40 40C33.0964 40 27.5 34.4036 27.5 27.5C27.5 20.5964 33.0964 15 40 15ZM40 70C30.795 70 22.3425 65.785 16.875 59.0912C17.5 51.25 30 47.5 40 47.5C50 47.5 62.5 51.25 63.125 59.0912C57.6575 65.785 49.205 70 40 70Z" fill="#FF0033"/>
+                    </svg>
+                </div>
+              
+                <p>99,9% рейсов выполняются точно по расписанию</p>
+            </div>
+            
+            <div class="advantage-card">
+                <div class="advantage-icon">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M40 0C17.9086 0 0 17.9086 0 40C0 62.0914 17.9086 80 40 80C62.0914 80 80 62.0914 80 40C80 17.9086 62.0914 0 40 0ZM60 42.5H42.5V60H37.5V42.5H20V37.5H37.5V20H42.5V37.5H60V42.5Z" fill="#FF0033"/>
+                    </svg>
+                </div>
+                
+                <p>Современный транспорт с кондиционерами</p>
+            </div>
+            <div class="advantage-card">
+                <div class="advantage-icon">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M40 0C17.9086 0 0 17.9086 0 40C0 62.0914 17.9086 80 40 80C62.0914 80 80 62.0914 80 40C80 17.9086 62.0914 0 40 0ZM40 70C22.3873 70 10 57.6127 10 40C10 22.3873 22.3873 10 40 10C57.6127 10 70 22.3873 70 40C70 57.6127 57.6127 70 40 70ZM40 20C28.9543 20 20 28.9543 20 40C20 51.0457 28.9543 60 40 60C51.0457 60 60 51.0457 60 40C60 28.9543 51.0457 20 40 20Z" fill="#FF0033"/>
+                    </svg>
+                </div>
+                 
+                <p>Более 100 направлений по всей стране</p>
+            </div>
+            
+          
+        </div>
+    </section>
+    
+    <section id="connection" class="connection-section">
+        <div class="connection-wrapper">
+            <h3 class="connection-title">Свяжитесь с нами</h3>
+            <div class="connection-divider"></div>
+            
+            <div class="connection-form-box">
+                <form id="connectionForm" class="paper-form">
+                    <h4 class="form-title">Заполните данные</h4>
+                    
+                    <div class="form-row">
+                        <div class="input-field">
+                            <input type="text" id="nameInput" required>
+                            <label for="nameInput">Ваше имя</label>
+                            <div class="underline"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="input-field">
+                            <input type="text" id="phoneInput" required>
+                            <label for="phoneInput">Номер телефона</label>
+                            <div class="underline"></div>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        Отправить
+                      
+                    </button>
+                    
+                    <div class="form-divider">
+                        <span class="divider-text">или</span>
+                    </div>
+                    
+                    <div class="social-links">
+                        <div class="social-row">
+                            <a href="#" class="social-btn">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm0-2a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm-3-5a5 5 0 0 0 10 0c0-1.38-.56-2.63-1.46-3.54L12 10.54l-5.54 5.92A4.96 4.96 0 0 0 9 15z"/>
+                                </svg>
+                            </a>
+                            
+                            <a href="#" class="social-btn">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm3.5 3a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm-7 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm3.5 9.5c-2.49 0-4.5-1.12-4.5-2.5h9c0 1.38-2.01 2.5-4.5 2.5z"/>
+                                </svg>
+                            </a>
+                        </div>
+                        
+                        <div class="social-row">
+                            <a href="#" class="social-btn">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                                </svg>
+                            </a>
+                            
+                            <a href="#" class="social-btn">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <div id="footerLogo">
+            <svg width="97" height="97" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_49_1090)">
+                <path d="M24.5 76.0605C28.9183 76.0605 32.5 72.4788 32.5 68.0605C32.5 63.6423 28.9183 60.0605 24.5 60.0605C20.0817 60.0605 16.5 63.6423 16.5 68.0605C16.5 72.4788 20.0817 76.0605 24.5 76.0605Z" stroke="#F3E7E7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M72.5 76.0605C76.9183 76.0605 80.5 72.4788 80.5 68.0605C80.5 63.6423 76.9183 60.0605 72.5 60.0605C68.0817 60.0605 64.5 63.6423 64.5 68.0605C64.5 72.4788 68.0817 76.0605 72.5 76.0605Z" stroke="#F3E7E7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16.5 68.0605H8.5V24.0605C8.5 22.9997 8.92143 21.9823 9.67157 21.2321C10.4217 20.482 11.4391 20.0605 12.5 20.0605H68.5C73.8043 20.0605 78.8914 23.0105 82.6421 28.2616C86.3929 33.5126 88.5 40.6345 88.5 48.0605V68.0605H80.5M64.5 68.0605H32.5" stroke="#F3E7E7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M64.5 20.0605L70.5 48.0605H88.5" stroke="#F3E7E7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8.5 40.0605H68.5" stroke="#F3E7E7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M28.5 20.0605V40.0605" stroke="#F3E7E7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M48.5 20.0605V40.0605" stroke="#F3E7E7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_49_1090">
+                <rect width="96" height="96" fill="white" transform="translate(0.5 0.0605469)"/>
+                </clipPath>
+                </defs>
+                </svg>
+            <p id="underLogoText">Turbo Transit</p>
+        </div>
+        <ul id="footerMenu">
+            <a href="tickets.html"><li id="footerMenuLink1">Оформить билеты</li></a>
+            <a href="aboutus.html"><li id="footerMenuLink3">О компании</li></a>
+            <a href="employees.html"><li id="footerMenuLink4">Сотрудники</li></a>
+            <a href="partners.html"><li id="footerMenuLink5">Партнеры</li></a>
+        </ul>
+    </footer>
+
+    <script>
+        const burgerBttn = document.getElementById("menu");
+const navbar = document.getElementById("headerMenu");
+
+burgerBttn.addEventListener("click", () => {
+    burgerBttn.classList.toggle("clicked");
+    navbar.classList.toggle("menuClicked");
+});
+    
+        window.addEventListener('load', function () {
+    let preloader = document.getElementById('preloader');
+    setTimeout(() => {
+        preloader.classList.add('done');
+    }, 1000); 
+    setTimeout(() => {
+        preloader.style.display = 'none';
+    }, 4000); 
+});
+        document.addEventListener('DOMContentLoaded', function() {
+            const nameInput = document.getElementById('nameInput');
+            const phoneInput = document.getElementById('phoneInput');
+    
+            // Функция для валидации имени
+            function validateName(name) {
+                const regex = /^[A-Za-zА-Яа-яЁё\s]{2,100}$/;
+                return regex.test(name);
+            }
+    
+            // Функция для валидации номера телефона
+            function validatePhone(phone) {
+                const regex = /^\+375\d{9}$/; 
+                return regex.test(phone);
+            }
+    
+            phoneInput.addEventListener('input', function() {
+                let phone = phoneInput.value.trim();
+               
+                if (phone.startsWith('375') && phone.length === 12) {
+                    phone = '+375' + phone.slice(3);
+                }
+                phoneInput.value = phone;
+            });
+    
+            // Обработчик отправки формы
+            const contactForm = document.getElementById('connectionForm');
+            contactForm.addEventListener('submit', function(event) {
+                event.preventDefault(); 
+    
+                // Получаем значения полей
+                const name = nameInput.value.trim();
+                const phone = phoneInput.value.trim();
+    
+                let isValid = true;
+    
+            
+                if (!validateName(name)) {
+                    nameInput.value = '';
+                    nameInput.placeholder = 'Только буквы';
+                    isValid = false;
+                } else {
+                    nameInput.placeholder = '';
+                }
+    
+                if (!validatePhone(phone)) {
+                    phoneInput.value = '';
+                    phoneInput.placeholder = 'Формат +375XXXXXXXXX';
+                    isValid = false;
+                } else {
+                    phoneInput.placeholder = '';
+                }
+    
+               
+                if (isValid) {
+                   
+                }
+            });
+        });
+    </script>
+</body>
+</html>
