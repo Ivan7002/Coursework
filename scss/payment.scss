@@ -16,7 +16,7 @@ main {
         margin: 0 auto;
         margin-bottom: 50px;
         text-align: center;
-        background-color: #F5F5F5;
+        background-color: $background-block;
         border-radius: 35px;
         box-shadow: 5px 6px 43px 4px rgba(0, 0, 0, 0.25);
         padding: 20px 0;
@@ -77,7 +77,7 @@ main {
             transition: 800ms;
             
             &.error {
-                border-color: #ff0033;
+                border-color: $background-color;
                 animation: shake 0.5s;
             }
         }
@@ -88,7 +88,7 @@ main {
         }
 
         input:focus {
-            outline: 2px solid #ff0033 !important;
+            outline: 2px solid $background-color !important;
         }
         
         button {
@@ -97,7 +97,7 @@ main {
             height: 48px;
             margin-bottom: 25px;
             margin-top: 15px;
-            background-color: #ff0033;
+            background-color: $background-color;
             border: none;
             border-radius: 35px;
             color: #FFFFFF;
@@ -127,7 +127,7 @@ main {
         align-items: center;
         text-align: center;
         flex-direction: column;
-        background-color: #F5F5F5;
+        background-color: $background-block;
         border-radius: 35px;
         box-shadow: 5px 6px 43px 4px rgba(0, 0, 0, 0.25);
         padding: 30px;
@@ -136,7 +136,7 @@ main {
             font-size: 28px;
             font-weight: normal;
             margin-bottom: 15px;
-            color: #ff0033;
+            color: $background-color;
         }
 
         p {
@@ -149,7 +149,7 @@ main {
             width: 93%;
             max-width: 315px;
             height: 47px;
-            background-color: #ff0033;
+            background-color: $background-color;
             border: none;
             border-radius: 35px;
             color: #FFF;
